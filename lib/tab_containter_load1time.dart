@@ -55,7 +55,7 @@ class _TabContainerLoad1TimeState extends State<TabContainerLoad1Time> {
     return MaterialApp(
       color: Colors.yellow,
       home: Scaffold(
-        body: IndexedStack(index: tabIndex, children: listScreens),
+        body: IndexedStack(index: listScreensIndex.indexOf(tabIndex), children: listScreens),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: tabIndex,
             onTap: _selectedTab,
